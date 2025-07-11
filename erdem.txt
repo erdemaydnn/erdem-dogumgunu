@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erdem'in Doğum Günü</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff66cc;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+      }
+      to {
+        text-shadow: 0 0 20px #ff66cc, 0 0 40px #ff66cc;
+      }
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff66cc;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #ff66cc;
+    }
+    iframe {
+      margin-top: 30px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>İyi ki Doğdun Erdem 🎉</h1>
+  <button class="button" id="surprizBtn">Sürpriz Mesaj 🎁</button>
+  <p id="message"></p>
+
+  <iframe
+    src="https://www.youtube.com/embed/JzKiYkkVwpU?autoplay=1&loop=1&playlist=JzKiYkkVwpU"
+    allow="autoplay"
+    frameborder="0"
+    width="300"
+    height="169"
+  ></iframe>
+
+  <script>
+    document.getElementById("surprizBtn").addEventListener("click", function () {
+      document.getElementById("message").textContent =
+        "Yeni yaşında her şey gönlünce olsun! 💖🎂";
+    });
+  </script>
+</body>
+</html>
+
+
